@@ -4,10 +4,10 @@ require 'travis/release/task'
 module Travis
   module Release
     RSpec.describe Task do
-      context "with a name passed to the constructor" do
+      context 'with a name passed to the constructor' do
         let(:task) { Task.new(:task_name) }
 
-        it "correctly sets the name" do
+        it 'correctly sets the name' do
           expect(task.name).to eq :task_name
         end
       end
