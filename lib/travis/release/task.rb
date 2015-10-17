@@ -37,10 +37,13 @@ module Travis
         task name => %w(
           build release:guard_clean release:source_control_push
         ) do
-          Bundler.ui.confirm %(
-            Please wait for the gem to deploy to RubyGems on Travis CI
-          )
+          Bundler.ui.confirm message
         end
+      end
+
+      # @private
+      def message
+        "Please wait for the gem to deploy to RubyGems on Travis CI"
       end
     end
   end
