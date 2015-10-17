@@ -43,7 +43,7 @@ module Travis
 
       # @private
       def message
-        "Please wait for the gem to deploy to RubyGems on Travis CI"
+        'Please wait for the gem to deploy to RubyGems on Travis CI'
       end
     end
   end
