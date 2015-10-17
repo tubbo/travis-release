@@ -17,7 +17,7 @@ module Travis
       # When +install_tasks!+ is invoked, create a +:release+ task in the
       # Rakefile.
       def install
-        Rake::Task[name.to_s].clear
+        Rake::Task[name.to_s].clear rescue nil
 
         desc 'Build and push this gem to RubyGems via Travis CI'
         task name => %w(
