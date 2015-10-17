@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['tubbo@psychedeli.ca']
 
   spec.summary       = 'Fancy Rake tasks for deploying with Travis'
-  spec.description   = 'Fancy Rake tasks for deploying with Travis'
+  spec.description   = 'Release RubyGems via Travis-CI with a Rake task'
   spec.homepage      = 'https://github.com/tubbo/travis-release'
   spec.license       = 'MIT'
 
