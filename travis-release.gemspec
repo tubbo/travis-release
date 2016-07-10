@@ -26,6 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0'
   spec.add_development_dependency 'yard', '~> 0'
 
-  spec.add_dependency 'rake', '~> 10.0'
-  spec.add_dependency 'bundler', '~> 1'
+  spec.add_dependency 'rake'
+  spec.add_dependency 'bundler'
 end
