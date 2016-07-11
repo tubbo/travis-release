@@ -13,4 +13,4 @@ Travis::Release::Task.new :release
 
 YARD::Rake::YardocTask.new :doc
 
-task default: %i(lint test build)
+task default: %i(test build)
