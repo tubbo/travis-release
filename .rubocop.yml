@@ -2,3 +2,4 @@ Style/Documentation:
   Exclude:
     - lib/travis/release/version.rb
     - spec/**/*
+    - test/**/*

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rake'
 
 module Travis
@@ -27,16 +29,16 @@ module Travis
       # @private
       def clear_old_task
         Rake::Task[name.to_s].clear
-      rescue
+      rescue StandardError
         true
       end
 
       # @private
       def define_new_task
         desc 'Build and push this gem to RubyGems via Travis CI'
-        task name => %w(
+        task name => %w[
           build release:guard_clean release:source_control_push
-        ) do
+        ] do
           Bundler.ui.confirm message
         end
       end
